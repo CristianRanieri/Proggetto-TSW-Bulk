@@ -1,0 +1,133 @@
+
+h2{
+    font-family: Bahnschrift,sans-serif;
+    text-align: center;
+}
+
+/* heder testa carrello e ordini */
+div#carrello-odrini{
+    margin-left: 25%;
+    height: 45px;
+    padding-top: 200px;
+    margin-bottom: 20px;
+}
+
+div.carrello-lable-testa{
+    width: 35%;
+    display: inline-block;
+}
+
+div.carrello-lable-testa h2{
+    margin: 5px;
+}
+
+div.carrello-lable-testa h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+div.carrello-lable-testa div{
+    width: 70%;
+    border-bottom-style: solid;
+    border-color: black;
+    border-bottom-width: 3px;
+    margin: auto;
+}
+/* heder testa carrello e ordini */
+
+
+
+/* tabella ordine */
+ table {
+     border-collapse: collapse;
+     width: 70%;
+     margin: auto;
+     margin-top: 50px;
+     display: none;
+ }
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-color: darkgrey;
+    border-style: solid;
+    border-width: 1px;
+}
+
+th{
+    color: #888888;
+    font-family: Bahnschrift,sans-serif;
+}
+
+td{
+    color: black;
+    font-family: system-ui,sans-serif;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+tr:hover {
+    background-color: cadetblue;
+}
+
+tr.riga-header:hover {
+    background-color: #008190;
+}
+
+tr.riga-header {
+    background-color: rgb(240,240,240);
+}
+
+tr.riga-header:hover th{
+    color: lightgrey;
+}
+
+tr.apparizione-530px {
+    display: none;
+}
+/* tabella ordine */
+
+
+/*bottone mostra prodotti */
+div#blocco-bottone-mostraProdotti{
+    margin: auto;
+    width: 140px;
+}
+
+button#buttonMostraProdotti{
+    width: 140px;
+    height: 50px;
+    margin-top: 40px;
+    border: none;
+    background-color: black;
+    color: lightgrey;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button#buttonMostraProdotti:hover{
+    background-color: #008190;
+}
+/*bottone mostra prodotti */
+
+
+/* media query */
+
+@media screen and (max-width: 530px) {
+    tr.display-none-530px{
+        display: none;
+    }
+
+    tr.apparizione-530px{
+        display: table-row;
+    }
+
+    tr.apparizione-530px th,th{
+        column-span: 1;
+    }
+}

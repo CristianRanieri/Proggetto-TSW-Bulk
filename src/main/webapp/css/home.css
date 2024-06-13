@@ -1,0 +1,165 @@
+
+h2{
+    bottom: 0px;
+    font-family: Bahnschrift,sans-serif;
+    text-align: center;
+}
+
+/* Corpo centrale della pagina*/
+
+main{
+    width: 100%;
+    padding-top: 161px;
+    background-color: white;
+}
+
+div#imageHome{
+    position: relative;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+div#imageHome img{
+    width: 100%;
+}
+
+div#imageHome div{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 19%;
+    height: 6%;
+    z-index: 3;
+}
+
+button.homeButton{
+    width: 100%;
+    font-size: 18px;
+    height: 35px;
+    font-family: Bahnschrift,sans-serif;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.homeButton:hover{
+    background-color: #008190;
+}
+
+.homeButton:active{
+    background-color: #007999;
+}
+
+
+/* prodotti piu venduti */
+
+div#piuVenduti{
+    width: 99%;
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+ul#prodotti{
+    width: 94%;
+    padding: 0px;
+    margin-left: 6%;
+    margin-right: 0px;
+}
+
+ul#prodotti li{
+    padding: 10px 10px;
+    padding-top:0px;
+    width: 29%;
+    display: inline-block;
+}
+
+div.prodottoBlocco{
+    width: 100%;
+}
+
+.prodottoBlocco a{
+    width: 100%;
+}
+
+.prodottoBlocco a img{
+    width: 100%;
+    display: block;
+}
+
+.prodottoBlocco a.prodottoBloccoAncora{
+    text-decoration: none;
+    font-family: Bahnschrift,sans-serif;
+    font-size: 1em;
+    color: #111111;
+}
+
+.prodottoBlocco a.prodottoBloccoAncora h3{
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+}
+
+.prodottoBlocco a.prodottoBloccoAncora h3:hover{
+    color: #008190;
+}
+
+/* media query */
+
+
+
+@media screen and (max-width: 760px) {
+    button.homeButton{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    button.homeButton{
+        width: 150%;
+        font-size: 14px;
+    }
+
+    div#imageHome div{
+        top: 40%;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    div#piuVenduti {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    ul#prodotti{
+        width: 95%;
+        margin: auto;
+    }
+
+    ul#prodotti li{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    button.homeButton{
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    button.homeButton{
+        width: 240%;
+        height: 42px;
+        font-size: 17px;
+    }
+
+    div#imageHome div{
+        top: 30%;
+    }
+}
+

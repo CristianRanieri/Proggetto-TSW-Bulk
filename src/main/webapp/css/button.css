@@ -1,0 +1,21 @@
+
+button.styleButton{
+    background-color: #FAFBFC;
+    border: 1px solid #888888;
+    color: #24292E;
+    font-size: 14px;
+    margin-top: 2px;
+    width: 90%;
+    height: 30%;
+    cursor: pointer;
+}
+
+.styleButton:hover{
+    background-color: #d3d3d3;
+    transition-duration: 0.1s;
+}
+
+.styleButton:active{
+    background-color: #EDEFF2;
+}
+

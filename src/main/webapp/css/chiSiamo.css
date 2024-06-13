@@ -1,0 +1,50 @@
+
+div#chiSiamo2{
+    overflow: hidden;
+    margin-top: 80px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+div#chiSiamo2 div{
+    width: 47%;
+    margin-left: 2%;
+    display: inline-block;
+}
+
+div#chiSiamo2 div#testo2{
+    float: right;
+}
+
+div#chiSiamo2 div img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1050px) {
+    div#chiSiamo2{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    div#chiSiamo2 div#testo2{
+        float: none;
+    }
+
+    div#chiSiamo2 div{
+        width: 70%;
+        margin:auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    div#chiSiamo2{
+        margin-top: 5%;
+    }
+
+    div#chiSiamo2 div{
+        width: 98%;
+    }
+}

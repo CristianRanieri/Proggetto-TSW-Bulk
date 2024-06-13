@@ -1,0 +1,97 @@
+
+main{
+    position: relative;
+    width: 100%;
+    padding-top: 161px;
+    background-color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+}
+
+h2,h3,h4{
+    font-family: Bahnschrift,sans-serif;
+}
+
+h2{
+    text-align:center;
+}
+
+
+div#blocco-titolo-pagina-errore{
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+div#blocco-errore{
+    width: 900px;
+    overflow: hidden;
+    margin: auto;
+}
+
+div#blocco-errore div{
+    width: 47%;
+    padding: 0px 1%;
+    display: inline-block;
+}
+div#blocco-errore div img{
+    width: 100%;
+}
+div#blocco-gestione-errore{
+    float: right;
+}
+
+
+div#blocco-gestione-errore > div#blocco-testo{
+    width: 100%;
+}
+div#blocco-bottone-riprova{
+    width: 21%;
+    margin-top: 10%;
+    float: none;
+}
+
+/* bottone riprova */
+
+div#blocco-bottone-riprova button{
+    width: 200px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: lightgrey;
+    font-family: Bahnschrift,sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+div#blocco-bottone-riprova button:hover{
+    background-color: #008190;
+}
+
+/* bottone riprova */
+
+/* media query */
+
+@media screen and (max-width: 950px) {
+    div#blocco-errore{
+        width: 94.8%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    div#blocco-errore div {
+        width: 95%;
+        margin: auto;
+        display: block;
+    }
+}
+
+/* media query */

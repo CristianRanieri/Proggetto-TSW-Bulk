@@ -1,0 +1,336 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-width: 320px;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 161px;
+    background-color: whitesmoke;
+    position: fixed;
+    z-index: 5;
+}
+
+
+/* Menu bar home */
+nav#menuBar{
+    display: inline-block;
+    padding-top: 40px;
+    width: 25%;
+    height: 40%;
+    position: relative;
+}
+
+nav > a{
+    position: absolute;
+    width: 100%;
+    min-width: 180px;
+}
+nav > a > img{
+    padding-left: 25%;
+    width: 45%;
+}
+
+ul.menuBar{
+    margin: 0px;
+    padding-left: 2%;
+    width: 100%;
+    height: 25%;
+    background-color: #008190;
+    position: absolute;
+}
+
+li.menuBar{
+    display: inline-block;
+    background-color: #008190;
+    height: 100%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+li.menuBar:hover{
+    background-color: floralwhite;
+    transition-duration: 0.2s;
+}
+
+li.menuBar > a{
+    font-size: 17px;
+    font-family: Bahnschrift, sans-serif;
+    color: whitesmoke;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+li.menuBar > a:hover{
+    color: #008190;
+    transition-duration: 0.2s;
+}
+
+.dropDownList{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 83%;
+    margin-left: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height: 110px;
+}
+
+.dropElement{
+    display: inline-block;
+    color: black;
+    padding: 18px 24px;
+    text-decoration: none;
+    font-family: Bahnschrift,sans-serif;
+}
+
+li.menuBar:hover + .dropDownList{
+    display: block;
+}
+
+.dropDownList:hover{
+    display: block;
+}
+
+.dropElement:hover{
+    background-color: lightgrey;
+}
+
+/* Menu bar home */
+
+/* searchBar */
+
+#formSearch{
+    display: inline-block;
+    width: 40%;
+    height: 40%;
+    padding-top: 42px;
+    padding-left: 5%;
+    position: absolute;
+}
+
+#formSearch > input[type="text"]{
+    display: inline-block;
+    width: 65%;
+    height: 36%;
+    font-size: 17px;
+}
+
+button#imageSearch{
+    background-color: #FAFBFC;
+    border: 1px solid #888888;
+    position: absolute;
+    width: 5%;
+    min-width: 30px;
+    height: 27%;
+    padding: 0px;
+    cursor: pointer;
+}
+
+#imageSearch img{
+    padding-top: 5px;
+    width: 55%;
+    height: 55%;
+}
+
+button#imageSearch:hover {
+    background-color: #d3d3d3;
+    transition-duration: 0.1s;
+}
+
+button#imageSearch:active {
+    background-color: #EDEFF2;
+}
+
+/* style bottone*/
+
+
+/* searchBar */
+
+/*botton login e carrello*/
+
+#formLogin{
+    width: 13%;
+    height: 65%;
+    min-width: 90px;
+    padding-top: 40px;
+    margin-left: 45%;
+    position: absolute;
+}
+
+#formCarrello{
+    width: 14%;
+    height: 65%;
+    min-width: 100px;
+    padding-top: 40px;
+    margin-left: 60%;
+    position: absolute;
+}
+
+/* menu bar laterale */
+#sideBar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: Bahnschrift,sans-serif;
+}
+
+#sideBar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: darkgrey;
+    display: block;
+    transition: 0.3s;
+    overflow: hidden;
+    height: 25px;
+    margin-top: 3px;
+}
+
+#sideBar a:hover {
+    color: #008190;
+}
+
+/* per chiudere la sideBar classe per la croce*/
+#sideBar #closeBar {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor:pointer;
+}
+
+#divSideSpan {
+    color: lightgrey;
+    position: fixed;
+    padding: 16px;
+    top: 93px;
+}
+
+#sideSpan{
+    font-size:30px;
+    cursor:pointer;
+    color: whitesmoke;
+}
+
+/* imagine logo piccola */
+div#immagine-logo-390px{
+    width: 40%;
+    display: none;
+    height: 30px;
+    position: absolute;
+    margin-top: 2px;
+    z-index: 1;
+}
+
+div#immagine-logo-390px a{
+    width: 100%;
+    height: 50px;
+    margin-left: 20px;
+}
+
+#imagineLogo{
+    width: 120px;
+    margin-left: 4%;
+    position: absolute;
+    margin-top: 15px;
+}
+
+
+/* media query */
+@media screen and (max-width: 680px) {
+    #formLogin{
+        display: none;
+    }
+
+    #formCarrello{
+        display: none;
+    }
+
+    #formSearch{
+        margin-left: 15%;
+        padding-left: 1%;
+    }
+
+    #formSearch input{
+        min-width: 138.24px;
+    }
+
+    #formSearch button{
+        min-width: 30px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    div#immagine-logo-390px{
+        display: inline-block;
+    }
+
+    #menuBar img{
+        display: none;
+    }
+
+    #formSearch{
+        margin-left: 0;
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 60px;
+    }
+
+    #formSearch > input[type="text"]{
+        width: 138px;
+    }
+
+    #formSearch button{
+        width: 30px;
+        max-height: 28px;
+    }
+}
+
+
+@media screen and (min-width: 681px) {
+
+    #formLogin{
+        display: inline-block;
+    }
+
+    #formCarrello{
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    li.menuBar, dropDownList,dropElement {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .menuBar {
+        z-index: 2;
+    }
+}

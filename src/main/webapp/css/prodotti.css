@@ -1,0 +1,255 @@
+
+main{
+    position: relative;
+    width: 100%;
+    padding-top: 161px;
+    background-color: white;
+}
+
+h2{
+    font-family: Bahnschrift,sans-serif;
+    text-align: center;
+}
+
+h4{
+    font-family: Bahnschrift,sans-serif;
+    text-align: center;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+
+/* Admin bottone*/
+div#blocco-inserisci-prodotto{
+    margin: auto;
+    width: 350px;
+}
+
+div#blocco-inserisci-prodotto input{
+    width: 100%;
+    height: 32px;
+    font-size: 16px;
+    font-family: Bahnschrift,sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+div#blocco-inserisci-prodotto input:hover{
+    background-color: #008190;
+}
+/* Admin bottone */
+
+
+
+div#blocco-titolo-pagina{
+    width: 100%;
+    text-align: center;
+    font-family: Bahnschrift,sans-serif;
+    margin-top: 25px;
+}
+
+
+
+div#blocco-seleziona-caratteristiche{
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+}
+
+div#blocco-seleziona-caratteristiche form{
+    padding-top: 15px;
+    width: 1150px;
+    margin: auto;
+}
+
+div#blocco-gusto{
+    width: 24%;
+    margin-left: 1%;
+    height: 40px;
+    display: inline-block;
+}
+
+div#blocco-quantita{
+    width: 24%;
+    margin-left: 1%;
+    display: inline-block;
+}
+
+div#blocco-prezzo{
+    width: 24%;
+    display: inline-block;
+}
+div#blocco-seleziona-caratteristiche input[type="range"]{
+    width: 80%;
+    margin: auto;
+}
+div#blocco-prezzo span{
+    font-family: Bahnschrift,sans-serif;
+    font-size: 16px;
+}
+
+div#blocco-bottone-ricerca{
+    width: 24%;
+    display: inline-block;
+}
+
+div#blocco-seleziona-caratteristiche select {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    font-family: Bahnschrift,sans-serif;
+    font-size: 16px;
+}
+
+div#blocco-seleziona-caratteristiche input[type="submit"]{
+    width: 100%;
+    height: 32px;
+    font-size: 16px;
+    font-family: Bahnschrift,sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+div#blocco-seleziona-caratteristiche input[type="submit"]:hover{
+    background-color: #008190;
+}
+
+
+/* Visualizzazione prodotti */
+
+div#blocco-prodotti{
+    width: 1150px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+ul#prodotti{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul#prodotti li{
+    padding: 10px;
+    padding-top:0px;
+    width: 23%;
+    display: inline-block;
+}
+
+div.prodottoBlocco{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.prodottoBlocco a{
+    width: 100%;
+}
+
+.prodottoBlocco a img{
+    width: 100%;
+    display: block;
+}
+
+.prodottoBlocco a.prodottoBloccoAncora{
+    text-decoration: none;
+    font-family: Bahnschrift,sans-serif;
+    font-size: 1em;
+    color: #111111;
+}
+
+.prodottoBlocco a.prodottoBloccoAncora h3{
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+}
+
+.prodottoBlocco a.prodottoBloccoAncora h3:hover{
+    color: #008190;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 1200px) {
+    div#blocco-prodotti{
+        width: 98.5%;
+    }
+
+    ul#prodotti li {
+        width: 22.8%;
+    }
+
+    div#blocco-seleziona-caratteristiche form{
+        width: 97%;
+    }
+}
+
+
+@media screen and (max-width: 1075px) {
+    ul#prodotti li {
+        width: 22.6%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    ul#prodotti li {
+        width: 47.7%;
+        padding: 10px 1%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    ul#prodotti li {
+        width: 47.5%;
+    }
+
+    div#blocco-seleziona-caratteristiche form {
+        padding-bottom: 10px;
+        background-color: whitesmoke;
+    }
+
+    div#blocco-seleziona-caratteristiche input[type="range"] {
+        width: 77%;
+    }
+
+    div#blocco-gusto{
+        width: 48%;
+    }
+
+    div#blocco-quantita{
+        width: 48%;
+    }
+
+    div#blocco-prezzo{
+        width: 48%;
+        margin-left: 2%;
+    }
+
+    div#blocco-bottone-ricerca{
+        width: 48%;
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {
+    ul#prodotti li {
+        width: 98%;
+        display: block;
+        margin: auto;
+        padding: 10px 0px;
+    }
+
+    div#blocco-inserisci-prodotto{
+        width: 86.8%;
+    }
+}
+
+/* media query */

@@ -1,0 +1,16 @@
+
+label#inCatalogo{
+    font-size: 19px;
+}
+
+div#blocco-inCatalogo{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+div#blocco-inCatalogo input[type="checkbox"]{
+    width: 18px;
+    height: 16px;
+    margin: 0px;
+}

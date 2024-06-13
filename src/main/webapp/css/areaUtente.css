@@ -1,0 +1,153 @@
+
+div#errore-cambio-credenziali{
+    width: 100%;
+    font-family: Bahnschrift, sans-serif;
+    text-align: center;
+    background-color: rgba(255,0,0,0.5);
+    height: 30px;
+}
+
+div#errore-cambio-credenziali div{
+    padding: 5px;
+}
+
+div#errore-cambio-credenziali h4{
+    margin: 0px;
+    color: darkred;
+}
+
+
+h2{
+    font-family: Bahnschrift, sans-serif;
+    text-align: center;
+}
+
+h4{
+    font-family: Bahnschrift, sans-serif;
+    text-align: center;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+/* Titolo della pagina */
+div#blocco-titolo-utente{
+    padding-top: 185px;
+}
+
+
+div#blocco-totale-credenziali{
+    width: 840px;
+    margin: auto;
+    overflow: hidden;
+}
+
+div#blocco-credenziali-cambiamento{
+    width: 45%;
+    margin-right: 1%;
+    display: inline-block;
+}
+
+div#blocco-credenziali-nonCambiamento{
+    width: 45%;
+    margin-left: 1%;
+    display: inline-block;
+    float: right;
+}
+
+
+div#blocco-credenziali-cambiamento> form{
+    width: 100%;
+}
+
+
+div.blocco-input-nep{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+div.blocco-input-nep div{
+    width: 100%;
+}
+
+div.blocco-input-nep input{
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+}
+
+div#blocco-input-admin{
+    width: 100%;
+    margin: 45px 0px;
+}
+
+div#blocco-credenziali-cambiamento label, div#blocco-credenziali-nonCambiamento label{
+    font-family: Bahnschrift,sans-serif;
+    font-size: 13px;
+}
+
+div#blocco-input-admin label{
+    font-size: 17px;
+}
+
+div#blocco-input-bottone, div#blocco-logout-bottone{
+    width: 100%;
+    margin: 35px 0px;
+    text-align: center;
+}
+
+div#blocco-input-bottone input, div#blocco-logout-bottone input {
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    height: 37px;
+}
+
+/* Bottono per il login */
+
+#bottone-login, #bottone-logout{
+    font-size: 16px;
+    font-family: Bahnschrift, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#bottone-login:hover ,#bottone-logout:hover{
+    background-color: #008190;
+}
+
+
+@media screen and (max-width: 880px) {
+    div#blocco-totale-credenziali{
+        width: 97%;
+    }
+}
+
+
+@media screen and (max-width: 664px) {
+    div#errore-cambio-credenziali{
+        height: 45px;
+    }
+}
+
+
+@media screen and (max-width: 415px) {
+    div#blocco-credenziali-cambiamento{
+        width: 95%;
+        display: block;
+    }
+
+    div#blocco-credenziali-nonCambiamento{
+        width: 95%;
+        display: block;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    div#errore-cambio-credenziali{
+        height: 65px;
+    }
+}

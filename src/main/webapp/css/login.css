@@ -1,0 +1,183 @@
+
+main{
+    position: relative;
+    width: 100%;
+    padding-top: 161px;
+    background-color: white;
+}
+
+
+div#errore-login{
+    width: 100%;
+    margin: auto;
+    font-family: Bahnschrift, sans-serif;
+    text-align: center;
+    background-color: rgba(255,0,0,0.5);
+    height: 30px;
+}
+
+div#errore-login div{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+div#errore-login h4{
+    margin: 0px 25px;
+    color: darkred;
+}
+
+h3#testo-croce-error{
+    margin: 0px;
+    position: absolute;
+    right: 8px;
+    font-size: 34px;
+    top: 153px;
+    color: darkred;
+    cursor: pointer;
+}
+
+
+
+div#blocco-login{
+    width: 100%;
+    margin-top: 30px;
+}
+
+div#blocco-login > div{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+}
+
+div#blocco-login > div#blocco-input-login{
+    float: left;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+div#blocco-login > div#blocco-immagine{
+    width: 45%;
+    margin-right: 0px;
+    max-width: 600px;
+}
+img#immagine-logo{
+    width: 100%;
+}
+
+
+div#titolo-Accedi{
+    width: 100%;
+    font-family: Bahnschrift, sans-serif;
+}
+
+div#blocco-credenziali-login{
+    width: 100%;
+    min-width: 215px;
+
+}
+
+div#blocco-credenziali-login > form{
+    width: 100%;
+}
+
+
+div#blocco-input-email{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+div#blocco-input-email div{
+    width: 100%;
+}
+
+div#blocco-input-email input{
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+}
+
+
+div#blocco-input-password{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+div#blocco-input-password div{
+    width: 100%;
+}
+
+div#blocco-input-password input{
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+}
+
+
+div#blocco-input-bottone{
+    width: 100%;
+    margin: 35px 0px;
+    text-align: center;
+}
+
+div#blocco-input-bottone a{
+    color: black;
+}
+
+div#blocco-input-bottone div{
+    width: 100%;
+}
+
+div#blocco-input-bottone input {
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    height: 37px;
+}
+
+div#blocco-credenziali-login label{
+    font-size: 12px;
+    font-family: Bahnschrift, sans-serif;
+}
+
+/* Bottono per il login */
+
+#bottone-login{
+    font-size: 16px;
+    font-family: Bahnschrift, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#bottone-login:hover{
+    background-color: #008190;
+}
+
+
+/* media query*/
+@media screen and (max-width: 680px) {
+    div#blocco-login > div#blocco-input-login{
+        width: 98%;
+        float: none;
+        margin:auto;
+        display: block;
+    }
+
+    div#blocco-login > div#blocco-immagine{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    div#errore-login{
+        height: 45px;
+    }
+}
+

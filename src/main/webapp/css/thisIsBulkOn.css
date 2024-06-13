@@ -1,0 +1,66 @@
+/* THIS IS BULKON */
+
+div#blocco-thisIsNutrition{
+    margin-top: 70px;
+}
+
+div#blocco-immagini{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+div#blocco-immagini img{
+    width: 100%;
+}
+
+div#blocco-immagine-principale{
+    width: 51%;
+    padding: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+div#blocco-immagini-secondarie{
+    width: 49%;
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+}
+
+div#blocco-immagine-1{
+    width: 48%;
+    padding: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+div#blocco-immagine-2{
+    width: 48%;
+    padding: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+div#blocco-immagine-3{
+    width: 50%;
+    padding: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+div#blocco-immagine-4{
+    width: 47%;
+    padding: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/* THIS IS BULKON */
+
+
+@media screen and (max-width: 415px) {
+    div#blocco-immagine-4{
+        width: 46%;
+    }
+}
